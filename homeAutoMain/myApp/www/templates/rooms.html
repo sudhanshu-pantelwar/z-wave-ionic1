@@ -1,0 +1,30 @@
+<ion-view title="Dashboard">
+
+ <ion-content>
+
+ <ion-list>
+  <ion-item ng-repeat="item in room1" ng-click="getDevices($index)">
+  <img ng-src="/img/kids_bedroom_icon.png" style="width: 6%; height: 6%; "> 
+    <span style="padding-left:15px">{{item}}</span>
+   
+    <span class="item-note" style="padding-top:10px">
+      {{countRoomStatusArray[$index]}} of {{countRoomArray[$index]}}
+    </span>
+
+    
+  </ion-item>
+</ion-list>
+
+{{room2}}
+
+<!-- <div class="list card" ng-repeat="item in room1.rooms" >
+
+  <a href="#" class="item item-icon-left">
+    <img ng-src="/img/kids_bedroom_icon.png" style="width: 5%; height: 5%;"">
+    {{item.name}}
+  </a>
+ </div> -->
+ </ion-content>
+</ion-view>
+
+<!-- 7011614152 -->
